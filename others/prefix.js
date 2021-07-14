@@ -17,14 +17,14 @@ module.exports = {
  async execute(message, args, client) {
 
     let prefix = await db.get(`prefix_${message.guild.id}`)
-    if(prefix === null) prefix = PREFIX;
+    if(prefix === null) prefix = +;
 
     //react with approve emoji
     message.react("<:emoji_4:815583574983966720>");
 
     if(!args[0]) return message.channel.send(new MessageEmbed()
     .setColor("#FF0000")
-    .setTitle(`Current Prefix: \`${prefix}\``)
+    .setTitle(`Current Prefix: \`${+help}\``)
     .setFooter('Please provide a new prefix')
     );
     if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply(new MessageEmbed()
