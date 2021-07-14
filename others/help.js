@@ -1,6 +1,6 @@
 const { Client, Collection, MessageEmbed } = require(`discord.js`);
 const { 
-  PREFIX, 
+  PREFIX,+
 } = require(`../config.json`);
 
   
@@ -10,7 +10,7 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**Reyna Help**",
+  description: "**Only Music Help**",
   execute(message) {
     let commands = message.client.commands.array();
 
@@ -20,23 +20,23 @@ module.exports = {
     .setDescription(`
 
 **User Commands**
-\`${PREFIX}invite\` - \`${PREFIX}support\` - \`${PREFIX}about\`
-\`${PREFIX}ping\` - \`${PREFIX}prefix\` - \`${PREFIX}uptime\`
-\`${PREFIX}avatar\` - \`${PREFIX}se\` - \`${PREFIX}invites\`
+\`${+}invite\` - \`${+}support\` - \`${+}about\`
+\`${+}ping\` - \`${+}prefix\` - \`${+}uptime\`
+\`${+}avatar\` - \`${+}se\` - \`${+}invites\`
 
 **Music Commands**
-\`${PREFIX}play\` - \`${PREFIX}skip\` - \`${PREFIX}skipto\`
-\`${PREFIX}stop\` - \`${PREFIX}volume\` - \`${PREFIX}nowplaying\`
-\`${PREFIX}shuffle\` - \`${PREFIX}search\` - \`${PREFIX}resume\`
-\`${PREFIX}remove\` - \`${PREFIX}queue\` - \`${PREFIX}filter\`
-\`${PREFIX}loop\` - \`${PREFIX}lyrics\` - \`${PREFIX}radio\`
+\`${+}play\` - \`${+}skip\` - \`${+}skipto\`
+\`${+}stop\` - \`${+}volume\` - \`${+}nowplaying\`
+\`${+}shuffle\` - \`${+}search\` - \`${+}resume\`
+\`${+}remove\` - \`${+}queue\` - \`${+}filter\`
+\`${+}loop\` - \`${+}lyrics\` - \`${+}radio\`
 
 **Fun Commands**
-\`${PREFIX}lock\` - \`${PREFIX}unlock\` - \`${PREFIX}ban\`
-\`${PREFIX}unban\` - \`${PREFIX}slowmode\` - \`${PREFIX}giveaway\`
+\`${+}lock\` - \`${+}unlock\` - \`${+}ban\`
+\`${+}unban\` - \`${+}slowmode\` - \`${+}giveaway\`
 
 **Links**
-[support](https://discord.gg/Zj5SFafHKG)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
+[support](https://discord.gg/x2jzF8Gt3K)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=841858854257164318&permissions=8&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
