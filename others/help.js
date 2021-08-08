@@ -10,7 +10,7 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**Only Music Help**",
+  description: "**FiiX Music Help**",
   execute(message) {
     let commands = message.client.commands.array();
 
@@ -46,3 +46,5 @@ module.exports = {
 
   }
 };
+
+Coded By /////FFiiX//////
